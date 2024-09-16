@@ -11,7 +11,7 @@ blue_led = LED(22)
 
 win = Tk()
 win.title("RGB GUI")
-win.geometry('800x480')
+win.geometry('1200x400')
 myFont = tkinter.font.Font(family ='Helvetica', size = 20, weight = "bold")
 
 def ledToggle(chk):
@@ -57,7 +57,7 @@ blueledButton = Radiobutton(win, text = 'BLUE', font = myFont, command = lambda:
 blueledButton.grid(row = 0, column = 3)
 
 exitButton = Button(win, text = "Exit", font = myFont, command = close, bg = 'yellow', height = 1, width = 24)
-exitButton.grid(row = 1, column = 1)
+exitButton.grid(row = 1, column = 2)
 
 win.protocol("WM_DELETE_WINDOW", close)
 win.mainloop()
